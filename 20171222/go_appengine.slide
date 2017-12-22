@@ -1,0 +1,83 @@
+Hobby Programming with Golang + App Engine
+22 Dec 2017
+
+Yuichi MURATA
+
+* Introduction
+
+Today I will present:
+
+- Golang web app development 101
+- How easy to publish web service with golang + App Engine
+- App Engine is suitable for hobby but also production
+
+* Why App Engine?
+
+- Container based application platform
+- No ops required
+- Datastore, Memcached, and many APIs built in
+- Start with Free Tier!
+- Stabilized but powerful (initial release was 2008)
+- Booming with golang runtime support
+
+* Hello World
+
+.code hello.go
+
+.code hello.app.yaml
+
+* Demo
+
+* Quiz App API
+
+- GET /api/quiz
+  [
+    {
+      "question": "What is Yuichi's favorite?",
+      "option1": "Baumkuhen",
+      "option2": "Chcolate",
+      "option3": "Candy",
+      "answer": 2
+    },
+    ...
+  ]
+
+- GET /api/scores
+  [
+    {
+      "name": "Yuichi",
+      "score": 3,
+    },
+    ...
+  ]
+
+* Demo
+
+* Play Quiz Game
+
+.link https://yuichim-jp.appspot.com/
+
+* Products using App Engine
+
+- Google Products
+
+- Super Mario Run
+
+.link https://www.blog.google/topics/google-cloud/how-app-engine-helped-power-super-mario-run/
+Published 151 contries, no scalability issue
+
+- AKB48 総選挙 2012
+
+.link https://www.cloud-ace.jp/report/detail03/
+Handles 24,000 queries/sec
+
+* Recommendation
+
+- Use Standard Libraries
+- No web framework at first
+- Stay simple, learn golang's philosophy
+.link https://golang.org/doc/faq
+
+* Links
+
+.link https://github.com/yuichi1004/gaequiz
